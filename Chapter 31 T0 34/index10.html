@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 10</title>
+</head>
+<body>
+    <script>
+        var date = new Date();
+        var refDate = new Date("December 18, 2019");
+        var a = date.getTime();
+        var b = refDate.getTime();
+        var mathExp = a - b;
+        document.write("<h3>"+"On Reference Date"+refDate+"</h3"+"<br/>");
+        document.write("<h3>" + Math.floor(mathExp / (1000*59)) + " Seconds Passed Since Beginning of 2020</h3>");
+    </script>
+</body>
+</html>

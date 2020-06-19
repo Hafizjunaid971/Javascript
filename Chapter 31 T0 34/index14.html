@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 14</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter Customer Name?");
+        name = name.toUpperCase();
+        var month = prompt("Enter Current Month?");
+        month = month.toUpperCase();
+        var unit = prompt("Enter Number of Units?");
+        unit = Number(unit);
+        var charges = prompt("Enter Charges Per Units?");
+        charges = Number(charges);
+        var net = unit * charges;
+        var late = 350;
+        var latePay = net + late;
+        document.write("<h2>Customer Name: " + name + "<br />" +
+        "Current Month: " + month + "<br />" +
+        "Number of Units: " + unit + "<br />" +
+        "Charges Per Unit: " + charges + "<br />" +
+        "Net Amount Payable (Within Due Date): " + net + "<br />" +
+        "late Payment Surharge: " + late + "<br />" +
+        "Gross Amount Payable (After Due Date): " + latePay + "</h2>"); 
+    </script>
+</body>
+</html>

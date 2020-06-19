@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 8</title>
+</head>
+<body>
+    <script>
+        var secretNum = [2,5,7];
+        var userInput = prompt("enter a Number Between 1 & 10?");
+        userInput = Number(userInput);
+        for (var i = 0; i < secretNum.length; i++) {
+            if (secretNum[i] === userInput) {
+                alert("congratulation");
+                break;
+            }
+        }
+        if (secretNum[i] != userInput) {
+            alert("Try Again");
+        }
+    </script>
+</body>
+</html>

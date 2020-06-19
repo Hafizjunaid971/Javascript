@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        var text = "The quick brown fox jumps over the lazy dog.";
+        var checking = /the/gi;
+        var valid = (text.match(checking)).length;
+        document.write("<h3>Text: " + text + "<br /><br />" + "There are " + valid + " occurrence(s) of word 'the'.</h3>");
+    </script>
+</body>
+</html>

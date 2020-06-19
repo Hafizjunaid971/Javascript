@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+</head>
+<body>
+    <script >
+        var width = prompt("Enter a whole number for the width of your rectangle.");
+        var height = prompt("Enter a whole number for the height of your rectangle.");
+        function area(width, height) {
+            return width * height;
+        }
+        function perimeter(width, height) {
+            return 2*( width * height);
+        }
+        
+        document.writeln("<h2>"+'The area of your rectangle is ' + area(width, height)+"<br>");         
+        document.writeln('The perimeter of your rectangle is ' + perimeter(width, height));
+
+             
+    </script>
+
+</body>
+</html>

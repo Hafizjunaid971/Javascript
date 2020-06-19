@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 11</title>
+</head>
+<body>
+    <script>
+        var userInput = prompt("Enter your any  Name to covert first letter to capital?");
+        var firstChar = userInput.slice(0,1);
+        firstChar = firstChar.toUpperCase();
+        var otherChar = userInput.slice(1);
+        otherChar = otherChar.toLowerCase();
+        var titleChars = firstChar + otherChar;
+        document.write("<h3>USer Input: " + userInput + "</h3>" + "<h3>Title Case: " + titleChars + "</h3>");
+    </script>
+</body>
+</html>

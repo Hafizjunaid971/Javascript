@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+          var usernameRegex = /^[a-zA-Z]{1}[a-zA-Z0-9]{5,}/;
+       var userPass = prompt("Enter password?");
+       var valid;
+       if (valid = userPass.match(usernameRegex)) {
+           alert(valid);
+       }
+       if (valid == null) {
+           alert(" It should contain alphabets and numbers ");
+           alert("It should not start with a number");
+           alert("It must at least 6 characters long ");
+           alert("enter valid password");
+       }
+    </script>
+</body>
+</html>

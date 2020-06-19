@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+   <p>Create 2 functions that calculate properties of a circle, using the <a href="http://math2.org/math/geometry/circles.htm">definitions</a> here.
+</p>
+ 
+<p>Create a function called <code>calcCircumfrence</code>:</p>
+<ul>
+  <li>Pass the radius to the function.
+  </li><li>Calculate the circumference based on the radius, and output "The circumference is NN".
+</li></ul>
+ 
+<p>Create a function called <code>calcArea</code>:</p>
+<ul>
+  <li>Pass the radius to the function.
+  </li><li>Calculate the area based on the radius, and output "The area is NN".
+</li></ul>
+    <script>
+        function calcCircumference(radius) {
+  var circumference = (Math.PI * 2) * radius;
+  var area = (Math.pow(radius, 2)) * Math.PI;
+ 
+  document.write("<h2>"+"The circumference of a circle with a radius of " + radius + " is " + circumference + 
+  ".The area for this circle is " + area + "."+"</h2>")
+}
+calcCircumference(37)
+calcCircumference(10);
+    </script>
+</body>
+</html>

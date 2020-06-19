@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 13</title>
+</head>
+<body>
+    <script>
+        var name = prompt("Enter you UserName?");
+        var symbol = ["@", ".", ",", "_", "-", " ", "#", "$", "!", "%", "^", "&","*",")","("];
+        for (var i = 0; i < symbol.length; i++) {
+            for (var j = 0; j < name.length; j++) {
+                if (symbol[i] === name[j]) {
+                    alert("Please Enter a unvalid UserName");
+                }
+            }
+        }
+    </Script>
+</body>
+</html>

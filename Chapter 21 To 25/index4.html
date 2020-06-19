@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 4</title>
+</head>
+<body>
+    <script>
+        var check1 = /hello world/;
+        var ask = prompt("Type To 'Hello World' ?");
+        ask = ask.toLowerCase();
+        var valid1;
+        if (valid1 = ask.match(check1)) {
+        alert(valid1);
+        }
+        var userIndex = prompt("Please type If you want to find Index of Letter 'l' from 'Hello World' than press 'l'? other wise Invalid Enter");
+        userIndex = userIndex.toLowerCase();
+        var b = ask.lastIndexOf("l");
+        var check2 = /l/;
+        var valid2;
+        if(valid2 = userIndex.match(check2)) {
+        valid2 = b;
+         alert("Last Index of 'l' is: " + valid2);
+        }
+        if (valid1 == null) {
+            alert("invalid! Enter, hello world");
+        }
+        if(valid2 == null) {
+            alert("invalid! Enter, 'l'");
+        }
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task 9</title>
+</head>
+<body>
+    <script>
+        var current = new Date();
+        var pastRamadan = new Date("aprail 25, 2020");
+        var currentTime = current.getTime();
+        var ramadanTime = pastRamadan.getTime();
+        var days = Math.floor(((currentTime-ramadanTime)/ 1000) / (59 * 59 *24));
+        document.write("<h3>Current Date: " + current + "<br />" +
+        "Ramadan Date: " + pastRamadan + "<br />" +
+        days + " Days have passed since 1st Ramadan 2020</h3>"); 
+    </script>
+</body>
+</html>
